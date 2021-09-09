@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="discription" content="affordable and proffetional web design">
+	<meta name="keywords" content="web design affordable web design, proffetional web disign">
+	<meta name="authors" content="">
+	<title>joblink eld</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="img/loman.jpg">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<img src="img/logo.jpg" alt="">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current"><a href="About.html">About</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Contact</a></li>
+				<li class="btn"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+				<li class="btn"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button></li>
+			</ul>
+<!-----------------------REGISTER FORM------------->
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="emai;"><b>Email:</b></label>
+      <input type="text" placeholder="Enter Email" name="Email" required>
+
+      <label for="psw"><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw"><b>Repeat Password:</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw" required>
+      <p>By creating an account you agree to our<a href="Terms/Privacy.html">Terms & Privacy</a></p>
+        
+      <button type="submit">Register</button>
+      
+      <p>Already have an account<a href=""> <b>login</b> </a></p>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<!--------------------login form------------>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/1.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<section>
+	<div>
+	<h2 style="text-align: center;"><u>Our Team</u></h2>
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<div class="center">
+				<img src="img/image.jpg" alt="" style="width: 50%; height: 400px; display: block; margin-right: auto; margin-left:auto;">
+			    </div>
+				<div class="container">
+					<h2>m.loman tech</h2>
+					<p class="title">CEO $ Founder</p>
+					<p>m.loman tech is the CEO and the founder of this system</p>
+					<p><button class="button">contact</button></p>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="img/pic5.jpg" alt="" style="width: 50%; height: 400px; display: block; margin-right: auto; margin-left:auto;">
+				<div class="container">
+					<h2>m.brian tech</h2>
+					<p class="title">arts director</p>
+					<p>m.loman is the arts director and the disigner of this system</p>
+					<p><button class="button">contact</button></p>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="img/loman.jpg" alt="" style="width: 50%; height: 400px; display: block; margin-right: auto; margin-left:auto;">
+				<div class="container">
+					<h2>m.victor tech</h2>
+					<p class="title"> software developer</p>
+					<p>m.loman is the software developer and the founder of this system</p>
+					<p><button class="button">contact</button></p>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+  </section>
+  <button id="button-back"><a href="about.html">back</a></button>
+</body>
+</html>
